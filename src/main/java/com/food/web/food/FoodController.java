@@ -58,7 +58,7 @@ public class FoodController {
 
     @GetMapping("/{searchWord}")
     public FoodDTO foodOne(@PathVariable("searchWord") String searchWord) {
-        pxy.println("누른 영화의 seq값은  :" + searchWord);
+        pxy.println("누른 영화의ddddads seq값은  :" + searchWord);
 
 
         return foodMapper.selectFood(searchWord);
