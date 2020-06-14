@@ -39,7 +39,7 @@ public class FoodController {
             pxy.println("검색어가 " + searchWord);
             pager.setSearchWord(searchWord);
         }
-        pxy.println("넘어온 페이지 번호: " + pageNumber);
+        pxy.println("넘어온 페이지 페이지 페이지 번호: " + pageNumber);
         pager.setPageNow(pxy.integer(pageNumber));
         pager.setBlockSize(5);
         pager.setPageSize(5);
