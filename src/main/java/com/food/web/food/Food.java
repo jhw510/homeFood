@@ -14,51 +14,51 @@ import javax.persistence.*;
 public class Food {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long seq;
-    @Column(length = 4)
+    @Column(length = 100)
     private String productClsCode;
-    @Column(length = 50)
+    @Column(length = 100)
     private String productClsName;
-    @Column(length = 50)
+    @Column(length = 100)
     private String categoryCode;
-    @Column(length = 50)
+    @Column(length = 100)
     private String categoryName;
-    @Column(length = 50)
+    @Column(length = 100)
     private String productno;
-    @Column(length = 50)
+    @Column(length = 100)
     private String lastestDay;
-    @Column(length = 50)
+    @Column(length = 100)
     private String productName;
-    @Column(length = 50)
+    @Column(length = 100)
     private String itemName;
-    @Column(length = 50)
+    @Column(length = 100)
     private String unit;
-    @Column(length = 50)
+    @Column(length = 100)
     private String day1;
-    @Column(length = 50)
+    @Column(length = 100)
     private String dpr1;
     @Column(length = 100)
     private String day2;
-    @Column(length = 50)
+    @Column(length = 100)
     private String dpr2;
-    @Column(length = 50)
+    @Column(length = 100)
     private String day3;
-    @Column(length = 50)
+    @Column(length = 100)
     private String dpr3;
     @Column(length = 100)
     private String day4;
-    @Column(length = 50)
+    @Column(length = 100)
     private String dpr4;
-    @Column(length = 50)
+    @Column(length = 100)
     private String direction;
     @Column(length = 50)
-    private String value;
+    private String price;
 
 
 
     @Builder
     public Food( String productClsCode,String productClsName,String  categoryCode,String categoryName,String productno,
                  String lastestDay,String productName,String itemName ,String  unit,String day1,
-                 String dpr1,String day2,String dpr2,String day3,String dpr3,String day4,String dpr4,String direction,String value){
+                 String dpr1,String day2,String dpr2,String day3,String dpr3,String day4,String dpr4,String direction,String price){
         this.productClsCode =productClsCode;
         this.productClsName=productClsName;
         this.categoryCode=categoryCode;
@@ -77,7 +77,7 @@ public class Food {
         this.day4=day4;
         this.dpr4=dpr4;
         this.direction=direction;
-        this.value=value;
+        this.price=price;
 
     }
 

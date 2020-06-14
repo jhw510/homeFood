@@ -8,13 +8,12 @@ import java.util.List;
 
 @Repository
 public interface FoodMapper {
-
         public void  insertFood(FoodDTO food);
         public void updateFood(FoodDTO food);
         public void deleteFood(FoodDTO food);
 
         public int count();
-        public List<FoodDTO> selectFood(Pager pager);
+        public List<FoodDTO> selectFoods(Pager pager);
         public FoodDTO selectFood(String seq);
 
 }
